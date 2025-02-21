@@ -1,0 +1,145 @@
+/* Importing Google Fonts for Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff; /* White background */
+  padding: 20px; /* Padding for spacing */
+  position: sticky; /* Sticky to the top of the viewport */
+  top: 0;
+  z-index: 1000; /* Ensure navbar is above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: 'Roboto', sans-serif; /* Font applied globally */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 28px; /* Logo font size */
+  font-weight: bold; /* Bold for emphasis */
+  color: #1a202c; /* Dark gray text */
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; /* Ensures the menu spans the container */
+}
+
+/* Navigation List Styling */
+.navbar-list {
+  display: flex; /* List items displayed horizontally */
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* No bullet points */
+}
+
+.navbar-link {
+  margin-left: 30px; /* Spacing between links */
+  text-decoration: none; /* No underline */
+  color: #1a202c; /* Dark gray */
+  font-weight: bold; /* Bold for emphasis */
+  font-size: 16px; /* Readable font size */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-link:hover {
+  color: #3182ce; /* Light blue on hover */
+}
+
+/* Hamburger Menu (Mobile View) */
+.navbar-hamburger {
+  display: none;
+  font-size: 30px; /* Size for visibility */
+  background: none;
+  border: none;
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Hide the menu by default */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width for mobile menu */
+    text-align: center; /* Centered links */
+  }
+
+  .navbar-menu.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .navbar-link {
+    margin: 10px 0; /* Vertical spacing for mobile */
+  }
+
+  .navbar-hamburger {
+    display: block; /* Show hamburger icon */
+  }
+}
+
+/* Hover Effect for Links */
+.nav-link {
+  color: black !important; /* Black text */
+  transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.nav-link:hover {
+  color: lightblue !important; /* Light blue hover effect */
+}
+
+/* Section Styles */
+.home-section {
+  text-align: center;
+  padding: 100px 20px; /* Spacing for content */
+  background-color: white;
+}
+
+.home-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.home-section p {
+  font-size: 18px;
+  color: #555; /* Subtle gray for text */
+  margin: 20px 0;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #3182ce; /* Call-to-action blue */
+  color: white; /* White text */
+  text-decoration: none; /* No underline */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold; /* Bold for visibility */
+  transition: background-color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.cta-button:hover {
+  background-color: #2b6cb0; /* Darker blue on hover */
+}
+
+/* About Section */
+.about-section {
+  padding: 50px;
+  background-color: #f7fafc; /* Light gray background */
+  text-align: center;
+}
+
+.about-section h3 {
+  font-size: 30px; /* Heading size */
+  font-weight: bold; /* Bold text */
+}
+
+.about-section p {
+  font-size: 18px; /* Paragraph font size */
+  color: #555; /* Subtle gray text */
+  max-width: 800px; /* Limit text width */
+  margin: 0 auto; /* Center text */
+}
