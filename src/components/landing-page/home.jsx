@@ -83,7 +83,7 @@ const App = () => {
               { name: "What We Do", link: "#why-choose-us" },
               { name: "Our Plans", link: "/plans" },
               { name: "Our Services", link: "/services" },
-              { name: "Contact Us", link: "/contact" }
+              { name: "Contact Us", link: "#/contact" }
             ].map((item, index) => (
               <motion.div
                 key={index}

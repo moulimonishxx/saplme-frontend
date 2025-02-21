@@ -1,9 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; 
 import LandingPage from "./components/landing-page/home"; // Ensure this file exports LandingPage correctly
 import TermsPage from "./components/landing-page/TermsPage"; // Ensure this file exports TermsPage correctly
 import PolicyPage from "./components/landing-page/PolicyPage"; // Ensure this file exports PolicyPage correctly
 import Contact from "./components/landing-page/Contact";
+
 
 function App() {
   return (
